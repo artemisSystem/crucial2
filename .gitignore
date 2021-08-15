@@ -9,6 +9,7 @@
 !/packmenu/
 !/ship/
 !/.gitignore
+!minecraftinstance.json
 /ship/output
 *.pyc
 .DS_STORE

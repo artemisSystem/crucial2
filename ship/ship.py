@@ -2,8 +2,8 @@ import json, os, shutil
 
 # ############################################################ CONFIG ############################################################
 
-pack_name = 'Crucial 2'
-pack_author = 'Vazkii'
+pack_name = 'Crucial 2 Creatania'
+pack_author = 'Vazkii/ArtemisSystem'
 
 book_file = 'patchouli_books/crucialguide/book.json'
 files_to_copy = ['config', 'defaultconfigs', 'openloader', 'patchouli_books', 'scripts', 'packmenu']

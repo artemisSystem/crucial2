@@ -1,0 +1,11 @@
+[
+	{
+		"minlight": 1,
+		"maxlight": 8,
+		"hostile": true,
+		"result": "deny"
+	},
+	{
+		"result": "allow"
+	}
+]

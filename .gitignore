@@ -11,3 +11,4 @@
 !/.gitignore
 /ship/output
 *.pyc
+.DS_STORE

@@ -652,6 +652,7 @@ i(<item:seasonals:sweet_berry_milkshake>, s + "shuffles active effects' levels a
 
 // Unique Functional Items
 i(<item:atmospheric:passion_vine_coil>, "Can be thrown. When it lands on a block, it drops down a vine you can climb.");
+i(<item:atmospheric:crustose>, "Can be created by growing Aspen Saplings in a 2x2 pattern.");
 
 i(<item:antiqueatlas:empty_antique_atlas>, "Works as a sort of map that catalogues where you go. Definitely a must have if you're going exploring!");
 
@@ -767,7 +768,7 @@ i(<item:iron_and_gold:raw_gold>, "Drops from Gold Ore when mined without Silk To
 
 i(<item:farsight_spyglasses:spyglass>, "Can be used to zoom in wherever you're looking at.");
 
-i(<item:fruitful:flowering_oak_sapling>, "Can be found in Forests and more commonly in Flowering oFrests. Can be pollinated by bees during full moons to sprout apples.");
+i(<item:fruitful:flowering_oak_sapling>, "Can be found in Forests and more commonly in Flowering Forests. Can be pollinated by bees during full moons to sprout apples.");
 
 i(<item:architects_palette:entrails>, "Can be acquired by trading with a Butcher Villager");
 i(<item:architects_palette:warpstone>, "Can be acquired by sending a Clay Block through a Nether Portal.");

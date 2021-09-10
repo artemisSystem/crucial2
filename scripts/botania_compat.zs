@@ -11,7 +11,6 @@ function remove(item as IItemStack) as void {
 	JEI.hideItem(item);
 	craftingTable.removeRecipe(item);
 }
-
 // Tweaks
 craftingTable.removeRecipe(<item:botania:fel_pumpkin>);
 craftingTable.addShaped("fel_pumpkin", <item:botania:fel_pumpkin>, [
@@ -24,19 +23,18 @@ craftingTable.addShaped("fel_pumpkin_carved", <item:botania:fel_pumpkin>, [
 	[<item:minecraft:bone>, <item:minecraft:carved_pumpkin>, <item:minecraft:rotten_flesh>],
 	[<item:minecraft:air>, <item:minecraft:blaze_powder>, <item:minecraft:air>]
 ]);
-craftingTable.removeRecipe(<item:botania:divining_rod>);
-craftingTable.addShaped("rod_of_the_plentiful_mantle", <item:botania:divining_rod>, [
-	[<item:minecraft:air>, <item:botania:livingwood_twig>, <item:botania:life_essence>],
-	[<item:minecraft:bone>, <item:botania:livingwood_twig>, <item:botania:livingwood_twig>],
-	[<item:botania:livingwood_twig>, <item:minecraft:air>, <item:minecraft:air>]
-]);
 craftingTable.removeRecipe(<item:botania:mana_gun>);
 craftingTable.addShaped("mana_blaster", <item:botania:mana_gun>, [
 	[<item:botania:redstone_spreader>, <item:botania:rune_mana>, <item:botania:life_essence>],
 	[<item:minecraft:air>, <tag:items:botania:livingwood>, <item:minecraft:tnt>],
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:botania:livingwood>]
 ]);
-
+craftingTable.removeRecipe(<item:botania:bifrost_perm>);
+craftingTable.addShaped("bifrost_block", <item:botania:bifrost_perm> * 8, [
+	[<item:botania:elf_glass>, <item:botania:elf_glass>, <item:botania:elf_glass>],
+	[<item:botania:elf_glass>, <item:botania:mana_pearl>, <item:botania:elf_glass>],
+	[<item:botania:elf_glass>, <item:botania:elf_glass>, <item:botania:elf_glass>]
+]);
 
 // Pre-nether rune of fire
 <recipetype:botania:runic_altar>.removeRecipe(<item:botania:rune_fire>);
@@ -87,11 +85,8 @@ for item in removeInfusion {
 
 // Remove items that don't fit
 var removeItems = [
-	"cobble_rod", "dirt_rod", "skydirt_rod", "water_rod", "gravity_rod",
-	"tornado_rod", "terraform_rod", "missile_rod",
-
 	"terra_pick", "terra_axe", "terra_sword", "star_sword", "thunder_sword",
-	"black_hole_talisman", "flight_tiara", "world_seed"
+	"black_hole_talisman", "flight_tiara", "world_seed",
 
 	"manasteel_helmet", "manasteel_chestplate", "manasteel_leggings", "manasteel_boots",
 	"elementium_helmet", "elementium_chestplate", "elementium_leggings", "elementium_boots",
@@ -100,8 +95,28 @@ var removeItems = [
 	// Content overlap
 	"slime_bottle",
 
+	// Rods
+	"cobble_rod", "dirt_rod", "skydirt_rod", "water_rod", "gravity_rod",
+	"tornado_rod", "terraform_rod", "missile_rod", "fire_rod", "smelt_rod",
+	"divining_rod", "rainbow_rod",
+
+	// Rings and other curios
+	
 	// Literally daybloom
-	"aura_ring", "aura_ring_greater"
+	"aura_ring", "aura_ring_greater",
+
+	"magnet_ring", "magnet_ring_greater",
+	"water_ring", "swap_ring", "dodge_ring", "mining_ring", "pixie_ring",
+	"reach_ring",
+
+	"ice_pendant",
+	"cloud_pendant", "super_cloud_pendant", "lava_pendant", "super_lava_pendant",
+
+	"invisibility_cloak",
+
+	"travel_belt", "super_travel_belt", "speed_up_belt", "knockback_belt",
+
+	"diva_charm"
 ];
 
 for item in removeItems {

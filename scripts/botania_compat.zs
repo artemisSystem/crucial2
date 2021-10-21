@@ -25,7 +25,7 @@ craftingTable.addShaped("fel_pumpkin_carved", <item:botania:fel_pumpkin>, [
 ]);
 craftingTable.removeRecipe(<item:botania:mana_gun>);
 craftingTable.addShaped("mana_blaster", <item:botania:mana_gun>, [
-	[<item:botania:redstone_spreader>, <item:botania:rune_mana>, <item:botania:life_essence>],
+	[<item:botania:redstone_spreader>, <item:botania:rune_mana>, <item:botania:dragonstone>],
 	[<item:minecraft:air>, <tag:items:botania:livingwood>, <item:minecraft:tnt>],
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:items:botania:livingwood>]
 ]);
@@ -112,7 +112,7 @@ var removeItems = [
 	"ice_pendant",
 	"cloud_pendant", "super_cloud_pendant", "lava_pendant", "super_lava_pendant",
 
-	"invisibility_cloak",
+	"invisibility_cloak", "holy_cloak", "unholy_cloak", "balance_cloak",
 
 	"travel_belt", "super_travel_belt", "speed_up_belt", "knockback_belt",
 

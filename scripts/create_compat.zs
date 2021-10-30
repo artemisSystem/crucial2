@@ -49,6 +49,18 @@ blastFurnace.addRecipe("raw_copper_blasting", <item:create:copper_ingot>, <item:
 <recipetype:create:crushing>.addRecipe("raw_gold_crushing", [<item:create:crushed_gold_ore>, <item:create:crushed_gold_ore> % 30, <item:minecraft:gravel> % 6], <item:iron_and_gold:raw_gold>);
 <recipetype:create:crushing>.addRecipe("raw_copper_crushing", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore> % 30, <item:minecraft:gravel> % 6], <item:contenttweaker:raw_copper>);
 
+// Caverns and Chasms Raw Ores ====================================================================
+
+#snip modnotloaded caverns_and_chasms
+
+furnace.addRecipe("crushed_silver_smelting", <item:caverns_and_chasms:silver_ingot>, <item:create:crushed_silver_ore>, 0.1, 200);
+blastFurnace.addRecipe("crushed_silver_blasting", <item:caverns_and_chasms:silver_ingot>, <item:create:crushed_silver_ore>, 0.1, 100);
+
+<recipetype:create:milling>.addRecipe("raw_silver_milling", [<item:create:crushed_silver_ore>], <item:contenttweaker:raw_silver>);
+<recipetype:create:crushing>.addRecipe("raw_silver_crushing", [<item:create:crushed_silver_ore>, <item:create:crushed_silver_ore> % 30, <item:minecraft:gravel> % 6], <item:contenttweaker:raw_silver>);
+
+#snip end
+
 // Tweaks =========================================================================================
 <recipetype:create:splashing>.removeByName("create:splashing/gravel");
 <recipetype:create:splashing>.addRecipe("gravel_splashing", [<item:minecraft:flint> % 25, <item:create:copper_nugget> % 12], <item:minecraft:gravel>);
@@ -714,10 +726,10 @@ stoneCutter.removeRecipe(<item:create:overgrown_dark_scoria>);
 
 // Overlap Removal ================================================================================
 craftingTable.removeRecipe(<item:supplementaries:turn_table>);
-craftingTable.removeRecipe(<item:supplementaries:piston_launcher>);
+craftingTable.removeRecipe(<item:supplementaries:spring_launcher>);
 craftingTable.removeRecipe(<item:structuredcrafting:structured_crafter>);
 JEI.hideItem(<item:supplementaries:turn_table>);
-JEI.hideItem(<item:supplementaries:piston_launcher>);
+JEI.hideItem(<item:supplementaries:spring_launcher>);
 JEI.hideItem(<item:structuredcrafting:structured_crafter>);
 craftingTable.removeRecipe(<item:quark:white_stool>);
 craftingTable.addShapeless("white_stool_convert", <item:create:white_seat>, [<item:quark:white_stool>]);
